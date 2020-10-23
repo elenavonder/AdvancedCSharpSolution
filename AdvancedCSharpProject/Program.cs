@@ -5,6 +5,25 @@ namespace AdvancedCSharpProject
 {
     class Program
     {
+
+        Mathematics<double> coll = new Mathematics<double>();
+
+        private void TestCollection()
+        {
+            coll.Add(1.5);
+            coll.Add(7.3);
+            coll.Add(5.6);
+        }
+
+
+
+        //Lambda in Methods
+        //private int Add (int a, int b)
+        //{
+        //    return a + b; 
+        //}
+        private int Add(int a, int b) => a + b; 
+
         //Rethrowing Exception
         private void RethrowingExceptions()
         {
@@ -42,7 +61,25 @@ namespace AdvancedCSharpProject
         //static means you don't have make an instance of the variable or even class. Just call it in STATIC MAIN METHOD
         static void Main(string[] args)
         {
-
+            //switch STATEMENT
+            //switch jumps straight to answer where if and else statements would take average 25 to go through to find the one
+            var stateCode = "OH";
+            var stateName = "";
+            switch (stateCode)
+            {
+                case "OH": stateName = "Ohio"; break; //break says the case is done and no other value can be it
+                case "KY": stateName = "Kentucky"; break;
+                case "IN": stateName = "Indiana"; break;
+                default: stateName = "I Don't Know"; break;
+            }
+            //switch EXPRESSION
+            stateName = stateCode switch
+            {
+                "OH" => "Ohio", 
+                "KY" => "Kentucky", 
+                "IN" => "Indiana",
+                _ => "I don't know" //the "_" is for anything else/ the default
+            };
 
             //out patameter
             var nbrStr = "123";//with a character like "f" it would come back false because f cannot be an integer
