@@ -49,6 +49,7 @@ namespace AdvancedCSharpProject
         {
             ["CSharp"] = new Bootcamp(),
             ["Java"] = new Bootcamp(),
+            ["Angular"] = new Bootcamp(),
         };
         void AccessDictionary()
         {
