@@ -6,6 +6,7 @@ namespace AdvancedCSharpProject
 {
     class BootcampException : Exception
     {
+        //For the empty class
         public BootcampException(string message, Exception innerException) : base(message, innerException)
         {
 
