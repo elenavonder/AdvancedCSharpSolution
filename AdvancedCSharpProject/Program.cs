@@ -56,7 +56,7 @@ namespace AdvancedCSharpProject
             var csharpBc = bootcamps["CSharp"];
         }
 
-        static int i = 10;
+        static int i = 12;
         static string a = "ABC";
 
         //static means you don't have make an instance of the variable or even class. Just call it in STATIC MAIN METHOD
