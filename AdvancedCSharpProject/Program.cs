@@ -64,7 +64,7 @@ namespace AdvancedCSharpProject
         {
             //switch STATEMENT
             //switch jumps straight to answer where if and else statements would take average 25 to go through to find the one
-            var stateCode = "OH";
+            var stateCode = "KY";
             var stateName = "";
             switch (stateCode)
             {
