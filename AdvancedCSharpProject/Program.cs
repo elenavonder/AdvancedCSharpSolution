@@ -69,7 +69,7 @@ namespace AdvancedCSharpProject
             switch (stateCode)
             {
                 case "OH": stateName = "Ohio"; break; //break says the case is done and no other value can be it
-                case "KY": stateName = "Kentucky"; break;
+                case "KY": stateName = "Kentucky"; break; //break says the case is done and no other value can be it
                 case "IN": stateName = "Indiana"; break;
                 default: stateName = "I Don't Know"; break;
             }
